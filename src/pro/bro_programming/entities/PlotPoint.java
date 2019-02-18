@@ -1,12 +1,12 @@
 package pro.bro_programming.entities;
 
-import java.sql.Time;
+import java.sql.Blob;
 import java.sql.Timestamp;
 
 public class PlotPoint {
 
     private int trace_id;
-    private String trace_data;
+    private Blob trace_data;
     private Timestamp trace_time;
 
     public void setTrace_id(int trace_id){
@@ -16,10 +16,10 @@ public class PlotPoint {
         return trace_id;
     }
 
-    public void setTrace_data(String trace_data) {
+    public void setTrace_data(Blob trace_data) {
         this.trace_data = trace_data;
     }
-    public String getTrace_data() {
+    public Blob getTrace_data() {
         return trace_data;
     }
 
@@ -29,12 +29,5 @@ public class PlotPoint {
     public Timestamp getTrace_time() {
         return trace_time;
     }
-    //public PlotPoint(){}
-    /*public PlotPoint(int trace_id, String trace_data, Timestamp trace_time){
-        this.setTrace_Id(trace_id);
-        this.setTrace_Data(trace_data);
-        this.setTrace_Time(trace_time);
-    }
-*/
 
 }
